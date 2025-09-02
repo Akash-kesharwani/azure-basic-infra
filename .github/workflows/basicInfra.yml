@@ -1,0 +1,9 @@
+name: Testing-infra
+
+on: workflow_dispatch
+
+jobs:
+  terraform-infra:
+    runs-on: spy
+    steps:
+    - name: this is first job
