@@ -14,7 +14,12 @@ jobs:
       
     - name: HashiCorp - Setup Terraform
       uses: hashicorp/setup-terraform@v2.0.3
-  
-          
-      
+
+    - name: Terraform Init
+      id: init
+      run: terraform init -input=false
+
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color   
       
