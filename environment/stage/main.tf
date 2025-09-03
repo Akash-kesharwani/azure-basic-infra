@@ -1,5 +1,5 @@
 module "rg-details" {
-  source = "../resource_group"
+  source = "../../resource_group"
   rg-det = var.rg-dets
  
 }
