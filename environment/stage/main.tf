@@ -13,4 +13,5 @@ module "vnet-details" {
 module "subnet" {
   source     = "../../subnet"
   subnet-det = var.subnet-dets
+  depends_on = [ module.vnet-details ]
 }
